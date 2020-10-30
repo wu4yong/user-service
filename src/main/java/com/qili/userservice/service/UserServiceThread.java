@@ -46,7 +46,7 @@ public class UserServiceThread {
 
         result.putAll(userInfoTask.get());//get是一个阻塞线程
         result.putAll(moneyInfoTask.get());
-        System.out.println("执行总时间为：" + (System.currentTimeMillis() - t1));//多线程并行执行结果为调用服务接口最长时间稍大
+        System.out.println("执行多线程并行方式总时间为：" + (System.currentTimeMillis() - t1));//多线程并行执行结果为调用服务接口最长时间稍大
         return result;
     }
 }

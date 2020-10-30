@@ -33,7 +33,7 @@ public class UserService {
         result.putAll(userInfo);
         result.putAll(userMoney);
 
-        System.out.println("执行总时间为：" + (System.currentTimeMillis() - t1));//结果调用时间应该为2个服务之和 3+5 秒
+        System.out.println("执行串行方式总时间为：" + (System.currentTimeMillis() - t1));//结果调用时间应该为2个服务之和 3+5 秒
 
         return result;
     }
